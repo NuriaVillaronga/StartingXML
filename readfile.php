@@ -27,5 +27,18 @@ function obxml($fichero){
     $fichero2 = simplexml_load_string($fichero);
     return $fichero2;
 }
-var_dump(obxml(leer_fichero_completo('./book.xml')));
+//var_dump(obxml(leer_fichero_completo('./book.xml')));
+
+//---------------------
+/*crea otra función que dado el objeto xml obtengas los siguientes el valor de los datos RecordReference, 
+ProductIdentifier/ProductFormDetail, Contributor/NameIdentifier/IDTypeName y TextContent/Text*/
+function obtener_Datos($nombre_fichero){
+    $objetoXML= obxml(leer_fichero_completo($nombre_fichero));
+    echo $objetoXML->Product->RecordReference ."\n";
+    echo $objetoXML->Product->ProductIdentifier->IDValue ."\n";
+    echo $objetoXML->Product->DescriptiveDetail->ProductFormDetail ."\n";
+    echo $objetoXML->Product->DescriptiveDetail->Contributor->NameIdentifier->IDTypeName;
+}
+obtener_Datos('./book.xml');
+
 ?>
