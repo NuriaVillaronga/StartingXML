@@ -22,10 +22,10 @@ class ObtenerDatos
         */
         //Con mapas clave => valor
          $datos_Obtener = [
-             "0" => $objetoXML->obxml($nombre_fichero)->Product->RecordReference,
-             "1" => $objetoXML->obxml($nombre_fichero)->Product->ProductIdentifier->IDValue,
-             "2" => $objetoXML->obxml($nombre_fichero)->Product->DescriptiveDetail->ProductFormDetail,
-             "3" => $objetoXML->obxml($nombre_fichero)->Product->DescriptiveDetail->Contributor->NameIdentifier->IDTypeName,
+             "RecordReference" => $objetoXML->obxml($nombre_fichero)->Product->RecordReference,
+             "ProductIdentifier" => $objetoXML->obxml($nombre_fichero)->Product->ProductIdentifier->IDValue,
+             "ProductFormDetail" => $objetoXML->obxml($nombre_fichero)->Product->DescriptiveDetail->ProductFormDetail,
+             "ContributorName" => $objetoXML->obxml($nombre_fichero)->Product->DescriptiveDetail->Contributor->NameIdentifier->IDTypeName,
          ];
         return $datos_Obtener;
     }

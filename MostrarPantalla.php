@@ -12,9 +12,14 @@ class MostrarPantalla
         
         $obtenerDatos = new ObtenerDatos();
         $arrayDatos = $obtenerDatos->obtener_Datos($nombre_fichero);
+        foreach($arrayDatos as $clave => $valor) {
+            print "$clave => $valor" ."\n";
+        }
+        /* Esto seria utilizando indices numericos
         for ($i = 0; $i < count($arrayDatos); $i++) {
             echo "$i => $arrayDatos[$i]" ."\n";
         }
+        */
     }
     
 }
