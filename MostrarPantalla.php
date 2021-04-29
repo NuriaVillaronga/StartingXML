@@ -1,5 +1,6 @@
 <?php
-include 'ObtenerDatos.php';
+namespace Nuria\Proyecto2; 
+require 'ObtenerDatos.php';
 
 class MostrarPantalla
 {

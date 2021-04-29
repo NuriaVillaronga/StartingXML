@@ -1,4 +1,6 @@
 <?php
+namespace Nuria\Proyecto2;
+use Exception;
 
 class LeerFichero
 {
@@ -10,7 +12,7 @@ class LeerFichero
         
         //Comprobar si no existe el fichero
         if(false == file_exists($nombre_fichero)){
-		      throw new Exception("No existe el fichero");
+            throw new Exception("No existe el fichero");
         }
         //Comprobar de que tipo es un fichero
         //Con los 3 = comparas el tipo y contenido (si ambos son del mismo tipo, file, string.. y ambos son xml, css...)

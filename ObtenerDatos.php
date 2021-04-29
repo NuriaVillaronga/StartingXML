@@ -1,5 +1,7 @@
 <?php
-include 'ObtenerObjXML.php';
+namespace Nuria\Proyecto2;
+require 'ObtenerObjXML.php';
+
 class ObtenerDatos
 {
     public function obtener_Datos(string $nombre_fichero):array{

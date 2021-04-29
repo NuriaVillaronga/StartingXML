@@ -1,5 +1,8 @@
 <?php
-include 'LeerFichero.php';
+namespace Nuria\Proyecto2;
+require 'LeerFichero.php'; //Con include 'LeerFichero.php', aunque eclipse de un error, el include tiene que ir antes del namespace
+use SimpleXMLElement;
+
 class ObtenerObjXML
 {
     public function obxml(string $nombre_fichero):SimpleXMLElement{
