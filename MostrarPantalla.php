@@ -3,10 +3,17 @@ include 'ObtenerDatos.php';
 
 class MostrarPantalla
 {
-    public static function mostrarPantalla($nombre_fichero){
-        $arrayDatos = ObtenerDatos::obtener_Datos($nombre_fichero);
+    public function mostrarPantalla(string $nombre_fichero):void{
+        /*$arrayDatos = ObtenerDatos::obtener_Datos($nombre_fichero); si fuese static
         for ($i = 0; $i < count($arrayDatos); $i++) {
-            echo $arrayDatos[$i] ."/n";
+            echo $arrayDatos[$i] ."\n";
+        }
+        */
+        
+        $obtenerDatos = new ObtenerDatos();
+        $obtenerDatos->obtener_Datos($nombre_fichero);
+        for ($i = 0; $i < count($obtenerDatos); $i++) {
+            echo $obtenerDatos[$i] ."\n";
         }
     }
     

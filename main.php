@@ -1,4 +1,6 @@
 <?php 
 include 'MostrarPantalla.php';
-MostrarPantalla::mostrarPantalla('./book.xml');
+$mostrar = new MostrarPantalla();
+$mostrar->mostrarPantalla('./book.xml')
+//MostrarPantalla::mostrarPantalla('./book.xml'); si mostrar pantalla fuese static
 ?>
