@@ -1,6 +1,6 @@
 <?php
+require dirname(__DIR__).'/ObtenerObjXML.php';
 namespace Nuria\Proyecto2;
-require 'ObtenerObjXML.php';
 
 class ObtenerDatos
 {

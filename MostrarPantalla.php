@@ -1,6 +1,6 @@
 <?php
+require dirname(__DIR__).'/ObtenerDatos.php';
 namespace Nuria\Proyecto2; 
-require 'ObtenerDatos.php';
 
 class MostrarPantalla
 {

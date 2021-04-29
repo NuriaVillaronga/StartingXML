@@ -1,7 +1,12 @@
 <?php
+//Se va a utilizar lo que hay dentro del fichero LeerFichero.php
+//Include y require tienen que ir antes del namescape aunque eclipse de un error
+require dirname(__DIR__).'/LeerFichero.php';
+//Lo de arriba estaría dando la ruta en la que se encuentra el fichero, que actualmente es esta: 
+// '/home/usuario/eclipse-workspace/Proyecto2/LeerFichero.php'; 
 namespace Nuria\Proyecto2;
-require 'LeerFichero.php'; //Con include 'LeerFichero.php', aunque eclipse de un error, el include tiene que ir antes del namespace
 use SimpleXMLElement;
+
 
 class ObtenerObjXML
 {

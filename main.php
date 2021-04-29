@@ -1,6 +1,7 @@
 <?php
-include 'MostrarPantalla.php';
-use Nuria\Proyecto2\MostrarPantalla; //Hay que hacer referencia al paquete en concreto que se quiere importar
+include dirname(__DIR__).'/MostrarPantalla.php';
+use Nuria\Proyecto2\{LeerFichero, ObtenerDatos, ObtenerObjXML, MostrarPantalla}; 
+//Importo todas las clases del espacio de nombres Nuria\Proyecto2
 
 $mostrar = new MostrarPantalla();
 $mostrar->mostrarPantalla('./book.xml')
