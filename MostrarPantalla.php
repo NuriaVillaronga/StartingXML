@@ -13,7 +13,7 @@ class MostrarPantalla
         $obtenerDatos = new ObtenerDatos();
         $arrayDatos = $obtenerDatos->obtener_Datos($nombre_fichero);
         for ($i = 0; $i < count($arrayDatos); $i++) {
-            echo $arrayDatos[$i] ."\n";
+            echo "$i => $arrayDatos[$i]" ."\n";
         }
     }
     
