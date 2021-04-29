@@ -11,9 +11,9 @@ class MostrarPantalla
         */
         
         $obtenerDatos = new ObtenerDatos();
-        $obtenerDatos->obtener_Datos($nombre_fichero);
-        for ($i = 0; $i < count($obtenerDatos); $i++) {
-            echo $obtenerDatos[$i] ."\n";
+        $arrayDatos = $obtenerDatos->obtener_Datos($nombre_fichero);
+        for ($i = 0; $i < count($arrayDatos); $i++) {
+            echo $arrayDatos[$i] ."\n";
         }
     }
     
